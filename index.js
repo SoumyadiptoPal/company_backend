@@ -79,7 +79,9 @@ router.post('/addUser', async(req, res)=> {
         res.status(500).send("Internal Server Error");
     }
 })
-
+router.get('/', async(req,res)=>{
+    res.send("App is Working");
+});
 // get all  users
 router.get('/getUser',async (req,res)=>{
     try{
